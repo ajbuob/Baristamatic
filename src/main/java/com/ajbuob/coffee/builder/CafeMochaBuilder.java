@@ -9,13 +9,13 @@ import com.ajbuob.coffee.domain.menu.Drink;
 
 public class CafeMochaBuilder implements DrinkBuilder {
 
-	@Override
-	public Drink build() {
-		CaffeMocha caffeMocha = new CaffeMocha();
-		caffeMocha.addBasicIngredient(new Espresso(),1);
-		caffeMocha.addBasicIngredient(new Cocoa(),1);
-		caffeMocha.addBasicIngredient(new SteamedMilk(),1);
-		caffeMocha.addBasicIngredient(new WhippedCream(),1);
-		return caffeMocha;
-	}
+    @Override
+    public Drink build() {
+        CaffeMocha caffeMocha = new CaffeMocha();
+        caffeMocha.addBasicIngredient(new Espresso(), 1);
+        caffeMocha.addBasicIngredient(new Cocoa(), 1);
+        caffeMocha.addBasicIngredient(new SteamedMilk(), 1);
+        caffeMocha.addBasicIngredient(new WhippedCream(), 1);
+        return caffeMocha;
+    }
 }

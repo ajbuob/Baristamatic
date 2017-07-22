@@ -7,11 +7,11 @@ import com.ajbuob.coffee.domain.menu.Drink;
 
 public class CaffeLatteBuilder implements DrinkBuilder {
 
-	@Override
-	public Drink build() {
-		CaffeLatte caffeLatte = new CaffeLatte();
-		caffeLatte.addBasicIngredient(new Espresso(),2);
-		caffeLatte.addBasicIngredient(new SteamedMilk(),1);
-		return caffeLatte;
-	}
+    @Override
+    public Drink build() {
+        CaffeLatte caffeLatte = new CaffeLatte();
+        caffeLatte.addBasicIngredient(new Espresso(), 2);
+        caffeLatte.addBasicIngredient(new SteamedMilk(), 1);
+        return caffeLatte;
+    }
 }

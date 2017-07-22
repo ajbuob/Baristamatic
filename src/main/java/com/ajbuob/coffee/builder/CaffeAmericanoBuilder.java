@@ -6,10 +6,10 @@ import com.ajbuob.coffee.domain.menu.Drink;
 
 public class CaffeAmericanoBuilder implements DrinkBuilder {
 
-	@Override
-	public Drink build() {
-		CaffeAmericano caffeAmericano = new CaffeAmericano();
-		caffeAmericano.addBasicIngredient(new Espresso(),3);
-		return caffeAmericano;
-	}
+    @Override
+    public Drink build() {
+        CaffeAmericano caffeAmericano = new CaffeAmericano();
+        caffeAmericano.addBasicIngredient(new Espresso(), 3);
+        return caffeAmericano;
+    }
 }

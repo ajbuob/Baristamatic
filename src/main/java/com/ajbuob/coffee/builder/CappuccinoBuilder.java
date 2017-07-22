@@ -8,12 +8,12 @@ import com.ajbuob.coffee.domain.menu.Drink;
 
 public class CappuccinoBuilder implements DrinkBuilder {
 
-	@Override
-	public Drink build() {
-		Cappuccino cappuccino = new Cappuccino();
-		cappuccino.addBasicIngredient(new Espresso(),2);
-		cappuccino.addBasicIngredient(new SteamedMilk(),1);
-		cappuccino.addBasicIngredient(new FoamedMilk(),1);
-		return cappuccino;
-	}
+    @Override
+    public Drink build() {
+        Cappuccino cappuccino = new Cappuccino();
+        cappuccino.addBasicIngredient(new Espresso(), 2);
+        cappuccino.addBasicIngredient(new SteamedMilk(), 1);
+        cappuccino.addBasicIngredient(new FoamedMilk(), 1);
+        return cappuccino;
+    }
 }
