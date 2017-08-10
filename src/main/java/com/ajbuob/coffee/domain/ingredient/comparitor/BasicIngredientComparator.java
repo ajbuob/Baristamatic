@@ -10,5 +10,4 @@ public class BasicIngredientComparator implements Comparator<BasicIngredient> {
 
         return ingredient1.getIngredientName().compareTo(ingredient2.getIngredientName());
     }
-
 }

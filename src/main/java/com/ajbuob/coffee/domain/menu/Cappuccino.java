@@ -9,4 +9,3 @@ public class Cappuccino extends Drink {
         return DRINK_NAME;
     }
 }
-
