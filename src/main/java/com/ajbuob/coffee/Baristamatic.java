@@ -22,13 +22,13 @@ public class Baristamatic {
     private final SortedMap<BasicIngredient, Integer> machineInventory = IngredientFactory.getInstance().getIngredients();
 
     //Set to store the menu items currently available for sale.
-    private final static SortedSet<String> menuItems = MenuItemFactory.getInstance().getMenuItems();
+    private static final SortedSet<String> menuItems = MenuItemFactory.getInstance().getMenuItems();
 
     //Convert set to array fur use in the menu switch statement.
-    private final static String[] menuArray = menuItems.toArray(new String[menuItems.size()]);
+    private static final String[] menuArray = menuItems.toArray(new String[menuItems.size()]);
 
     //DrinkBuilderFactory to create menu items.
-    private final static DrinkBuilderFactory drinkBuilderFactory = DrinkBuilderFactory.getInstance();
+    private static final DrinkBuilderFactory drinkBuilderFactory = DrinkBuilderFactory.getInstance();
 
     private static final DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
