@@ -19,16 +19,16 @@ import com.ajbuob.coffee.domain.menu.factory.MenuItemFactory;
 public class Baristamatic {
 
     //Map to store the ingredients and the current quantity of each in the machine
-    private SortedMap<BasicIngredient, Integer> machineInventory = IngredientFactory.getInstance().getIngredients();
+    private final SortedMap<BasicIngredient, Integer> machineInventory = IngredientFactory.getInstance().getIngredients();
 
     //Set to store the menu items currently available for sale.
-    private static SortedSet<String> menuItems = MenuItemFactory.getInstance().getMenuItems();
+    private final static SortedSet<String> menuItems = MenuItemFactory.getInstance().getMenuItems();
 
     //Convert set to array fur use in the menu switch statement.
-    private static String[] menuArray = menuItems.toArray(new String[menuItems.size()]);
+    private final static String[] menuArray = menuItems.toArray(new String[menuItems.size()]);
 
     //DrinkBuilderFactory to create menu items.
-    private static DrinkBuilderFactory drinkBuilderFactory = DrinkBuilderFactory.getInstance();
+    private final static DrinkBuilderFactory drinkBuilderFactory = DrinkBuilderFactory.getInstance();
 
     private static final DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
@@ -139,8 +139,8 @@ public class Baristamatic {
             for (Entry<BasicIngredient, Integer> entry : coffeeDrink.getIngredients().entrySet()) {
                 BasicIngredient basicIngredient = entry.getKey();
                 int qtyInDrink = entry.getValue();
-                int qtyInInvantory = machineInventory.get(basicIngredient);
-                int newQty = qtyInInvantory - qtyInDrink;
+                int qtyInInventory = machineInventory.get(basicIngredient);
+                int newQty = qtyInInventory - qtyInDrink;
                 machineInventory.put(basicIngredient, newQty);
             }
 

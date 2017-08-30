@@ -19,7 +19,7 @@ public class IngredientFactory {
 
     private static IngredientFactory instance = null;
 
-    private SortedMap<BasicIngredient, Integer> ingredientMap = new TreeMap<>(new BasicIngredientComparator());
+    private final SortedMap<BasicIngredient, Integer> ingredientMap = new TreeMap<>(new BasicIngredientComparator());
 
     private IngredientFactory() {
 

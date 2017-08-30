@@ -8,7 +8,7 @@ import com.ajbuob.coffee.domain.ingredient.comparitor.BasicIngredientComparator;
 
 public abstract class Drink {
 
-    private Map<BasicIngredient, Integer> ingredients = new TreeMap<>(new BasicIngredientComparator());
+    private final Map<BasicIngredient, Integer> ingredients = new TreeMap<>(new BasicIngredientComparator());
 
     public abstract String getDrinkName();
 

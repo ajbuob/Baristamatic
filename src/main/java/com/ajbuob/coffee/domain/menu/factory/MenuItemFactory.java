@@ -7,7 +7,7 @@ public class MenuItemFactory {
 
     private static MenuItemFactory instance = null;
 
-    private SortedSet<String> menuItems = new TreeSet<>();
+    private final SortedSet<String> menuItems = new TreeSet<>();
 
     private MenuItemFactory() {
         menuItems.add("Coffee");
